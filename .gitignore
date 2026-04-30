@@ -1,0 +1,13 @@
+# Database - too large for GitHub
+chroma_db/
+
+# PDFs - don't upload source documents
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env
