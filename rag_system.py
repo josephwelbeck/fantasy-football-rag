@@ -63,7 +63,7 @@ def query_rag_system(query_text, vector_store):
     return chain.invoke(query_text)
 
 def main():
-    folder_path = r"C:\Users\JosephWelbeck-White\OneDrive - Coretek\Desktop\rag-project\data"
+    folder_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")"
 
     if not os.path.exists("./chroma_db"):
         print("No database found. Building it now from your PDFs...")
